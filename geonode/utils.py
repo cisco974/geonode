@@ -65,14 +65,9 @@ from geonode import geoserver, qgis_server, GeoNodeException  # noqa
 from geonode.base.auth import (extend_token,
                                get_or_create_token,
                                get_token_from_auth_header,
-                               get_token_object_from_session)
+                               get_token_object_from_se
 
-try:
-    import json
-except ImportError:
-    from django.utils import simplejson as json
-
-DEFAULT_TITLE = ""
+trT_TITLE = ""
 DEFAULT_ABSTRACT = ""
 
 INVALID_PERMISSION_MESSAGE = _("Invalid permission level.")
